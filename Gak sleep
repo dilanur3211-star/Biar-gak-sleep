@@ -1,0 +1,11 @@
+schtasks /create /sc minute /mo 3 /tn "AntiTidurPintar" /tr "powershell.exe -WindowStyle Hidden -Command \"Add-Type -AssemblyName System.Windows.Forms; `$LastPos = [System.Windows.Forms.Cursor]::Position; Start-Sleep -Seconds 180; `$CurrentPos = [System.Windows.Forms.Cursor]::Position; if (`$LastPos.X -eq `$CurrentPos.X -and `$LastPos.Y -eq `$CurrentPos.Y) { [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point((`$CurrentPos.X + 1), `$CurrentPos.Y); Start-Sleep -Seconds 1; [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point((`$CurrentPos.X - 1), `$CurrentPos.Y) }\""
+
+
+
+
+
+Tekan win + r  shell:startup
+Buat shortcut
+Kasih nama windows update
+
+powershell.exe -WindowStyle Hidden -Command "Add-Type -AssemblyName System.Windows.Forms; while(`$true) { `$LastPos = [System.Windows.Forms.Cursor]::Position; Start-Sleep -Seconds 180; `$CurrentPos = [System.Windows.Forms.Cursor]::Position; if (`$LastPos.X -eq `$CurrentPos.X -and `$LastPos.Y -eq `$CurrentPos.Y) { [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point((`$CurrentPos.X + 1), `$CurrentPos.Y); Start-Sleep -Seconds 1; [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point((`$CurrentPos.X - 1), `$CurrentPos.Y) } }"
