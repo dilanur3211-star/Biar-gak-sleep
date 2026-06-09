@@ -1,0 +1,15 @@
+​1. Masuk ke Power Options (Paling Utama)
+​Ini langkah pertama dan paling standar:
+​Klik Start -> Ketik "Control Panel" -> Buka.
+​Pilih Hardware and Sound -> Power Options.
+​Di sebelah kiri, klik "Choose when to turn off the display".
+​Di sini ada dua setelan penting:
+​Turn off the display: Ubah ke Never.
+​Put the computer to sleep: Ubah ke Never.
+​Klik Save changes.
+​2. Cek Pengaturan "Advanced" (Biar Lebih Yakin)
+​Kadang Windows masih punya aturan tambahan yang maksa PC sleep. Di menu yang sama tadi:
+​Klik "Change advanced power settings".
+​Cari bagian Hard disk -> Turn off hard disk after -> Set ke 0 (artinya Never).
+​Cari bagian Sleep -> Sleep after -> Pastikan 0.
+​Cari bagian Sleep -> Allow hybrid sleep -> Ubah ke Off.
