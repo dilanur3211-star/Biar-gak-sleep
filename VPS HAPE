@@ -1,0 +1,17 @@
+ssh root@168.144.32.53
+
+
+
+screen -S msf_metasplot
+screen -S msf_metasplot5555
+
+
+ screen -r msf_listener
+ screen -r msf_metasplot5555
+ screen -ls
+
+
+msf6 exploit(multi/handler) > exploit
+
+
+1. shell       untuk buka cmd
